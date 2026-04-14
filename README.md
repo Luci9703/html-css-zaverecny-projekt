@@ -93,12 +93,14 @@ Container přidej vždy do každé sekce takto:
 </section>
 ```
 
+
 - **Na mobilu:**
   - maximální šířka `540px`
   - vycentrován horizontálně uprostřed stránky
   - padding vpravo a vlevo `20px`
 - **Od tabletu** a výše:
   - nastavená maximální šířka se změní na `1100px`
+
 
 ### Tlačítko
 
@@ -136,7 +138,7 @@ Tlačítko se chová také responzivně, mění se mu velikost písma a padding.
   - velikost písma `1.25rem`
   - tloušťka písma `500`
   - písmo není podtržené
-  - barva textu `--color-secondary-dark`
+  - barva textu `--color-secondary-dark` 
   - border radius `100vw` (aby bylo tlačítko na koncích kompletně kulaté)
   - při najetí myší (nebo klávesnicí) se barva pozadí nastaví na `--color-secondary-bright`
 - **Na tabletu:**
@@ -145,6 +147,11 @@ Tlačítko se chová také responzivně, mění se mu velikost písma a padding.
   - padding se změní na `15px` nahoře a dole, `30px` vlevo a vpravo
 
 ![Menu](assets/menu.png)
+
+
+
+
+ZDE JSEM SKONČILA !!!
 
 Na mobilu jsou logo a menu **pod sebou**, od tabletu výše jsou **vedle sebe**, logo úplně vlevo, menu úplně vpravo.
 
