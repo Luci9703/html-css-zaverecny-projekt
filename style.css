@@ -16,7 +16,6 @@ html { box-sizing: border-box; }
 
   --font-base: "DM Sans", sans-serif;
   --font-special: "Playfair Display", serif;
-
 }
 
 
@@ -25,33 +24,20 @@ body {
   font-size: 1.125rem;
   line-height: 1.4;
   color: var(--color-text);
-  /* margin-inline: auto; */
-  width: 100vw;
-  text-align: center;
-  padding: 0 20px 0 20px;
   margin: 0;
-
-}
-
-
-.main__container {
-  max-width: 540px;
-  margin: 0 auto;
-  /* margin-inline: auto; */
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 540px;
 }
 
+.listek__container,
+.rozvoz__container,
+.footer__container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+}
 
 h1, h2 {
   font-family: var(--font-special);
-
 }
 
 h1 {
@@ -59,7 +45,8 @@ h1 {
   font-weight: 400;
   line-height: 1;
   padding: 0;
-
+  padding-top: 20px;
+  margin: 0;
 }
 
 h2 {
@@ -67,7 +54,6 @@ h2 {
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.2;
-
 }
 
 h3 {
@@ -75,14 +61,13 @@ h3 {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.2;
-
 }
 
 .sekce__hero,
 .sekce__listek,
 .sekce__rozvoz,
 .footer {
-  padding: 50px;
+  padding: 20px;
   margin: 0;
 }
 
@@ -96,7 +81,6 @@ h3 {
   color: white;
   background-color: var(--color-primary);
   border-radius: 100vw;
- 
 }
 
 .button:hover,
@@ -107,29 +91,26 @@ h3 {
 .button__objednat {
   display: block;
   width: fit-content;
-  margin-top: 20px;
+  margin: 10px 0 0 0;
 }
 
 header {
-  padding: 20px 0;
+  padding: 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-direction: column;
-
 }
 
 .logo__img {
   height: 35px;
-
+  margin: 0 20px;
 }
 
 .menu {
   display: flex;
   flex-direction: row;
-  padding: 20px 0;
+  padding: 0 10px;
   gap: 10px;
-
 }
 
 .menu__item {
@@ -141,7 +122,6 @@ header {
   text-decoration: none;
   color: var(--color-secondary-dark);
   border-radius: 100vw;
-  
 }
 
 .menu__item:hover {
@@ -153,34 +133,25 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
   max-height: fit-content;
-  padding: 80px 0;
+  padding: 80px 20px;
   margin: 0;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; */
 }
 
 .hero__description {
   padding: 10px 0;
-  font-size: 1,125rem;
+  font-size: 1.125rem;
 }
-
-
-.sekce__listek {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 1;
-  align-items: center;
-  gap: 30px;
-
-}
-
 
 .chapter__title {
   margin-bottom: 40px;
   display: block;
-
+  text-align: center;
 }
 
 .chapter__subtitle {
@@ -189,20 +160,26 @@ header {
   color: var(--color-secondary);
 }
 
+.karticky {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+ }
 
 .nabidka {
-  max-width: 500px;
   display: flex;
-  padding: 30px 20px;
   flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 1;
+  max-width: 500px;
+  gap: 10px;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: flex-start;
+  align-items: center;
   text-align: center;
   border: 1px solid var(--color-secondary-bright);
   border-radius: var(--radius);
-  
 }
-
 
 .icon {
   width: 40px;
@@ -213,37 +190,39 @@ header {
 
 .description {
   margin: 0;
-  padding: 20px;
-
+  padding: 20px 0;
 }
-
 
 .sekce__rozvoz {
   background-color: var(--color-section-bg);
-  max-width: 540px;
-
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
 }
 
 .rozvoz__image {
   width: 100%;
-  border-radius: 10px;
-
+  border-radius: var(--radius);
 }
 
 .chapter__title_rozvoz {
   text-align: left;
+  margin: 20px 0;
 }
 
 .description__rozvoz {
   text-align: left;
   padding: 20px 0;
+  margin: 0;
 }
-
 
 .odkaz {
   color: var(--color-primary);
   text-decoration: none;
-  margin: 10px 0;
+  margin: 0;
+  font-weight: bold;
+  margin-top: auto;
 }
 
 .odkaz:hover {
@@ -251,55 +230,43 @@ header {
   color: var(--color-primary);
 }
 
-
-.ul_rozvoz {
+.ul__rozvoz {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 20px 0 0 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: fit-content;
-  gap: 10px;
-  
+  align-items: flex-start; 
 }
 
 .circle__icon {
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   width: 40px;
   height: 40px;
   text-align: center;
 }
 
-
 footer {
+  padding: 40px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
   background-color: var(--color-footer-bg);
   color: var(--color-secondary-light);
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  padding: 30px 50px;
   text-align: left;
-
 }
-
 
 .footer__odkaz {
   color: var(--color-secondary-bright);
-  
 }
 
-
-.ul_footer {
+.ul__footer {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 10px;
-  padding: 0;
-
-
+  gap: 20px;
+  padding: 15px 0;margin: 0;
 }
 
 li {
@@ -310,66 +277,147 @@ li {
 
 .footer__logo {
   height: 40px;
-
 }
 
+.copyright {
+  margin: 18px 0;
+  text-align: left;
+}
 
-
-
-/* 
 
 @media (min-width: 768px) {
 
  h1 {
   font-size: 4rem;
- }
+  }
 
   h2 {
-  font-size: 3rem;
+    font-size: 3rem;
  }
 
  body {
-  max-width: 1100px;
+  width: 100%;
  }
 
  .button {
-    padding: 20px 3+40px;
+    padding: 20px 40px;
     font-size: 1.125rem;
   }
 
   .menu__item {
-  padding: 10px 20px;
+    padding: 10px 20px;
   }
 
   .container__hero {
-  padding: 120px 0;
+    padding: 120px 0;
   }
 
   header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px 10px;
+    justify-content: space-between;
+  }
+
+  .sekce__hero {
+    padding: 100px 20px;
   }
 
   .hero__description {
-    font-size: 1,25rem;
-  }  
+    font-size: 1.25rem;
+  }
+
+  .karticky {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .nabidka {
+    width: calc(50% - 30px);
+    margin: 0;
+  }
+ 
+  .listek__container {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+  }
+
+  .rozvoz__container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 0;
+  }
+
+  .chapter__title_rozvoz {
+    margin-top: 0;
+  }
+
+  .rozvoz__image {
+    max-height: 600px;
+  }
+
+  .rozvoz__picture {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .rozvoz__content {
+    width: calc((100vw - 30px) / 2);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__leva {
+    align-items: baseline;
+  }
+
+  .footer__prava {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+  .footer__logo {
+    text-align: left;
+  }
+
+  .ul__footer {
+    text-align: right;
+  }
+
+  .copyright {
+    text-align: right;
+  }
 
 }
 
 
-
 @media (min-width: 1100px) {
 
+  header,
+  .sekce__hero,
+  .sekce__rozvoz,
+  .footer
+  .main__container {
+    width: 100%;
+  }
+  
   h1 {
   font-size: 5rem;
   }
 
   h2 {
-  font-size: 3,5rem;
- }
+  font-size: 3.5rem;
+  }
 
   .logo {
   height: 45px;
@@ -379,10 +427,31 @@ li {
   padding: 15px 30px;
   }
 
+  header {
+  padding: 10px 20px;
+  }
+
   .container__hero {
   padding: 150px 0;
   }
 
-  
+  .hero__description {
+    margin: 40px 0;
+  }
 
-} */
+  .nabidka {
+    width: calc(25% - 30px);
+    margin: 0;
+  }
+
+  .rozvoz__container {
+    padding: 0;
+    gap: 40px;
+    width: ((100% - 40px) / 2);
+  }
+
+  .rozvoz__image {
+    width: 100%;
+  }
+
+}
