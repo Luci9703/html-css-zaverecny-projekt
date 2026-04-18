@@ -150,9 +150,6 @@ Tlačítko se chová také responzivně, mění se mu velikost písma a padding.
 
 
 
-
-ZDE JSEM SKONČILA !!!
-
 Na mobilu jsou logo a menu **pod sebou**, od tabletu výše jsou **vedle sebe**, logo úplně vlevo, menu úplně vpravo.
 
 
