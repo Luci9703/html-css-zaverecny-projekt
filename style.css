@@ -95,7 +95,7 @@ h3 {
 }
 
 header {
-  padding: 20px;
+  padding: 20px 0;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -170,7 +170,7 @@ header {
 .nabidka {
   display: flex;
   flex-direction: column;
-  max-width: 500px;
+  max-width: 540px;
   gap: 10px;
   margin: 0 auto;
   padding: 20px;
@@ -213,7 +213,7 @@ header {
 
 .description__rozvoz {
   text-align: left;
-  padding: 20px 0;
+  padding: 40px 0;
   margin: 0;
 }
 
@@ -233,7 +233,7 @@ header {
 .ul__rozvoz {
   list-style: none;
   padding: 0;
-  margin: 20px 0 0 0;
+  margin: 40px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start; 
@@ -334,6 +334,7 @@ li {
 
   .nabidka {
     width: calc(50% - 30px);
+    max-width: 1100px;
     margin: 0;
   }
  
@@ -349,6 +350,7 @@ li {
     flex-direction: row;
     gap: 30px;
     padding: 0;
+    
   }
 
   .chapter__title_rozvoz {
