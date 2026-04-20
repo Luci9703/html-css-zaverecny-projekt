@@ -28,12 +28,22 @@ body {
   padding: 0;
 }
 
+.header__container,
+.hero__container,
 .listek__container,
 .rozvoz__container,
 .footer__container {
+  max-width: 540px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px;
+}
+
+.sekce__hero,
+.sekce__listek,
+.sekce__rozvoz,
+footer {
+  padding: 50px
 }
 
 h1, h2 {
@@ -63,14 +73,6 @@ h3 {
   line-height: 1.2;
 }
 
-.sekce__hero,
-.sekce__listek,
-.sekce__rozvoz,
-.footer {
-  padding: 20px;
-  margin: 0;
-}
-
 .button,
 .button__objednat {
   display: inline-block;
@@ -91,14 +93,17 @@ h3 {
 .button__objednat {
   display: block;
   width: fit-content;
-  margin: 10px 0 0 0;
-}
+  }
 
-header {
+.header__container {
   padding: 20px 0;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.logo {
+  text-align: center;
 }
 
 .logo__img {
@@ -109,8 +114,7 @@ header {
 .menu {
   display: flex;
   flex-direction: row;
-  padding: 0 10px;
-  gap: 10px;
+  gap: auto;
 }
 
 .menu__item {
@@ -198,8 +202,7 @@ header {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 40px;
-}
+  }
 
 .rozvoz__image {
   width: 100%;
@@ -248,7 +251,11 @@ header {
 }
 
 footer {
-  padding: 40px;
+  background-color: var(--color-footer-bg);
+  width: 100%
+}
+
+.footer__container {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -299,7 +306,23 @@ li {
   width: 100%;
  }
 
- .button {
+ .header__container,
+.hero__container,
+.listek__container,
+.rozvoz__container,
+.footer__container {
+  max-width: 1100px;
+}
+
+.sekce__hero,
+.sekce__listek,
+.sekce__rozvoz,
+footer {
+  padding: 80px;
+}
+
+ .button,
+ .button__objednat {
     padding: 20px 40px;
     font-size: 1.125rem;
   }
@@ -308,11 +331,11 @@ li {
     padding: 10px 20px;
   }
 
-  .container__hero {
+  .hero__container {
     padding: 120px 0;
   }
 
-  header {
+  .header__container {
     flex-direction: row;
     padding: 20px 10px;
     justify-content: space-between;
@@ -333,8 +356,7 @@ li {
   }
 
   .nabidka {
-    width: calc(50% - 30px);
-    max-width: 1100px;
+    width: calc(50% - 15px);
     margin: 0;
   }
  
@@ -374,7 +396,7 @@ li {
     flex-direction: column;
   }
   
-  footer {
+  .footer__container {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -386,7 +408,7 @@ li {
   .footer__prava {
     display: flex;
     flex-direction: column;
-    text-align: right;
+    text-align: left;
   }
 
   .footer__logo {

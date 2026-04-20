@@ -16,21 +16,25 @@
 
   <header>
 
-    <div class="logo">
+    <div class="header__container">
 
-      <img class="logo__img" src="images/logo.svg" alt="Restaurace Bříško">
+      <div class="logo">
+
+        <img class="logo__img" src="images/logo.svg" alt="Restaurace Bříško">
+
+      </div>
+
+        
+      <nav class="menu">
+
+        <a class="menu__item" href="#">Jídelní lístek</a>
+        <a class="menu__item" href="#">O nás</a>
+        <a class="menu__item" href="#">Kontakt</a>
+        <a class="menu__item" href="#">Rezervace</a>
+
+      </nav>
 
     </div>
-
-      
-    <nav class="menu">
-
-      <a class="menu__item" href="#">Jídelní lístek</a>
-      <a class="menu__item" href="#">O nás</a>
-      <a class="menu__item" href="#">Kontakt</a>
-      <a class="menu__item" href="#">Rezervace</a>
-
-    </nav>
     
   </header>
 
@@ -40,18 +44,23 @@
   <!-- sekce HERO -->
   <section class="sekce__hero">
 
-    <h1 class="main__title">Zážitek z jídla</h1>
-    <p class="hero__description">Objevte harmonii chutí v prostředí,<br> kde se tradice potkává s moderní gastronomií.</p>
-    <a class="button" href="#">Rezervovat stůl</a>
+    <div class="hero__container">
+
+      <h1 class="main__title">Zážitek z jídla</h1>
+      <p class="hero__description">Objevte harmonii chutí v prostředí,<br> kde se tradice potkává s moderní gastronomií.</p>
+      <a class="button" href="#">Rezervovat stůl</a>
+
+    </div>
 
   </section>
 
   
   <!-- sekce JÍDELNÍ LÍSTEK -->
 
-  <div class="listek__container">
     
-    <section class="sekce__listek"> 
+  <section class="sekce__listek"> 
+
+    <div class="listek__container">
 
       <h2 class="chapter__title">Jídelní lístek</h2>
 
@@ -95,9 +104,11 @@
 
       </div>
 
-    </section>
+    </div>
+
+  </section>
   
-  </div>
+
 
 
   <!-- sekce ROZVOZ -->
@@ -107,7 +118,7 @@
     <div class="rozvoz__container">
 
       <div class="rozvoz__picture">
-          
+            
         <picture>
 
           <source srcset="images/rozvoz-na-vysku.jpg" media="(min-width: 768px)">
@@ -125,17 +136,17 @@
         <ul class="ul__rozvoz">
           <li>
             <img class="circle__icon" src="images/hodiny.svg" alt="" width="40" height="40">
-              Dovezeme do 30 minut
+                Dovezeme do 30 minut
           </li>
 
           <li>
             <img class="circle__icon" src="images/cerstve.svg" alt="" width="40" height="40">
-              Vždy česrtvě uvařené
+                Vždy česrtvě uvařené
           </li>
 
           <li>
             <img class="circle__icon" src="images/online.svg" alt="" width="40" height="40">
-              Objednáte online
+                Objednáte online
           </li>
         </ul>
 
@@ -147,38 +158,45 @@
 
     </div>
 
+    
+
   </section>
+
 
   <!-- PATIČKA -->
 
   <footer>
- 
-    <div class="footer__leva">
-        
-      <img class="footer__logo" src="images/logo-footer.svg" alt="Restaurace Bříško">
 
-      <p>
-        Restaurace Bříško<br>
-        U pupíku 42<br>
-        123 45 Najedlov
-      </p>
+    <div class="footer__container">
+  
+      <div class="footer__leva">
+          
+        <img class="footer__logo" src="images/logo-footer.svg" alt="Restaurace Bříško">
 
-    </div>
-
-    <div class="footer__prava">
-
-      <div class="footer__menu">
-
-        <ul class="ul__footer">
-          <li><a class="footer__odkaz" href="#">Jídelní lístek</a></li>
-          <li><a class="footer__odkaz" href="#">O nás</a></li>
-          <li><a class="footer__odkaz" href="#">Kontakt</a></li>
-          <li><a class="footer__odkaz"  href="#">Rezervace</a></li>
-        </ul>
+        <p>
+          Restaurace Bříško<br>
+          U pupíku 42<br>
+          123 45 Najedlov
+        </p>
 
       </div>
 
-      <p class="copyright">Copyright &copy; 2025 HTML a CSS kurz od Czechitas</p>
+      <div class="footer__prava">
+
+        <div class="footer__menu">
+
+          <ul class="ul__footer">
+            <li><a class="footer__odkaz" href="#">Jídelní lístek</a></li>
+            <li><a class="footer__odkaz" href="#">O nás</a></li>
+            <li><a class="footer__odkaz" href="#">Kontakt</a></li>
+            <li><a class="footer__odkaz"  href="#">Rezervace</a></li>
+          </ul>
+
+        </div>
+
+        <p class="copyright">Copyright &copy; 2025 HTML a CSS kurz od Czechitas</p>
+
+        
 
       </div>
 
