@@ -1,8 +1,7 @@
 # Závěrečný projekt
 
 **ODKAZ NA HOTOVÝ WEB:** 
-file:///C:/Users/Hosko/OneDrive/E-mailov%C3%A9%20p%C5%99%C3%ADlohy/Plocha/html-css-zaverecny-projekt/index.html
-
+https://luci9703.github.io/html-css-zaverecny-projekt/
 
 
 *Zadání pro závěrečný projekt v kurzu HTML a CSS (blended) od Czechitas*
